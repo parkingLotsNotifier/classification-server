@@ -1,5 +1,5 @@
 
-**Welcome to Predict-server**
+**Welcome to predict-server**
 
 this is a service for [CPPS-server](https://github.com/parkingLotsNotifier/cpps-server)
 
