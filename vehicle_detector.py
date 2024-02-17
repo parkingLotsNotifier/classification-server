@@ -15,7 +15,7 @@ class VehicleDetector:
         try:
             # Resize the image to the input size expected by the model
             #frame = cv.resize(image, (224, 224))
-            classes, _, _ = self.net.detect(image, confThreshold=0.4, nmsThreshold=0.4)
+            classes, _, _ = self.net.detect(image, confThreshold=0.1, nmsThreshold=0.2)
             return "occupied" if any(class_id in classes for class_id in self.classes_of_interest) else "unoccupied"
         except Exception as e:
             print(f"Error predicting occupancy for {filepath}: {str(e)}")

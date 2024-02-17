@@ -30,4 +30,4 @@ def receive_image_list(image_list):
     emit("predictions", predictions)
 
 if __name__ == "__main__":
-    socketio.run(app, debug=True, port=8001, host='192.168.0.96')
+    socketio.run(app, debug=True, port=8001, host='192.168.1.234')
